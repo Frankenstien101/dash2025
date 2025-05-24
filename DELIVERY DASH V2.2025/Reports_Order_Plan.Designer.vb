@@ -23,9 +23,9 @@ Partial Class Reports_Order_Plan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reports_Order_Plan))
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -47,6 +47,7 @@ Partial Class Reports_Order_Plan
         Me.STOREID = New System.Windows.Forms.Label()
         Me.STORENAME = New System.Windows.Forms.Label()
         Me.SOPLANNUMBER = New System.Windows.Forms.Label()
+        Me.GunaAdvenceButton5 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTGDATA, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -176,8 +177,8 @@ Partial Class Reports_Order_Plan
         '
         Me.DTGDATA.AllowUserToAddRows = False
         Me.DTGDATA.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGDATA.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGDATA.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DTGDATA.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.DTGDATA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
@@ -185,23 +186,23 @@ Partial Class Reports_Order_Plan
         Me.DTGDATA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DTGDATA.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGDATA.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGDATA.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGDATA.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DTGDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGDATA.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGDATA.DefaultCellStyle = DataGridViewCellStyle6
         Me.DTGDATA.EnableHeadersVisualStyles = False
         Me.DTGDATA.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.DTGDATA.Location = New System.Drawing.Point(10, 149)
@@ -433,11 +434,46 @@ Partial Class Reports_Order_Plan
         Me.SOPLANNUMBER.TabIndex = 21
         Me.SOPLANNUMBER.Text = "-"
         '
+        'GunaAdvenceButton5
+        '
+        Me.GunaAdvenceButton5.Animated = True
+        Me.GunaAdvenceButton5.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton5.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton5.BackColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton5.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.Gray
+        Me.GunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton5.CheckedImage = CType(resources.GetObject("GunaAdvenceButton5.CheckedImage"), System.Drawing.Image)
+        Me.GunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DimGray
+        Me.GunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton5.ForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton5.Image = CType(resources.GetObject("GunaAdvenceButton5.Image"), System.Drawing.Image)
+        Me.GunaAdvenceButton5.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton5.Location = New System.Drawing.Point(716, 101)
+        Me.GunaAdvenceButton5.Name = "GunaAdvenceButton5"
+        Me.GunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton5.OnHoverImage = Nothing
+        Me.GunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.Radius = 8
+        Me.GunaAdvenceButton5.Size = New System.Drawing.Size(194, 42)
+        Me.GunaAdvenceButton5.TabIndex = 22
+        Me.GunaAdvenceButton5.Text = "RECALIBRATE ROUTE"
+        Me.GunaAdvenceButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'Reports_Order_Plan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1173, 696)
+        Me.Controls.Add(Me.GunaAdvenceButton5)
         Me.Controls.Add(Me.SOPLANNUMBER)
         Me.Controls.Add(Me.STORENAME)
         Me.Controls.Add(Me.STOREID)
@@ -487,4 +523,5 @@ Partial Class Reports_Order_Plan
     Friend WithEvents STOREID As Label
     Friend WithEvents GunaAdvenceButton4 As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents SOPLANNUMBER As Label
+    Friend WithEvents GunaAdvenceButton5 As Guna.UI.WinForms.GunaAdvenceButton
 End Class

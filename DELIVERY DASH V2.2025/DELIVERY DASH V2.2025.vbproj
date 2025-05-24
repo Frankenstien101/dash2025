@@ -17,19 +17,23 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\sample\Desktop\DASH V2 BETA\</PublishUrl>
+    <PublishUrl>\\172.40.0.81\bspi_server\DEPLOYMENT\DASH_2025\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <UpdateUrl>\\172.40.0.81\bspi_server\DEPLOYMENT\DASH_2025\</UpdateUrl>
+    <ProductName>DASH 2025</ProductName>
+    <PublisherName>BSPI IT KNIGHTS</PublisherName>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -77,6 +81,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DELIVERYDASHICON.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Licensing.6.0.8\lib\net472\Bunifu.Licensing.dll</HintPath>
@@ -95,6 +102,10 @@
     </Reference>
     <Reference Include="Microsoft.Maps.MapControl.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Maps.MapControl.WPF.1.0.0.3\lib\net40-Client\Microsoft.Maps.MapControl.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3179.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3179.45\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
@@ -213,6 +224,7 @@
     <Compile Include="Module2.vb" />
     <Compile Include="Module3.vb" />
     <Compile Include="Module4.vb" />
+    <Compile Include="Module5.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -228,10 +240,64 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Reports_Cross_Dock.Designer.vb">
+      <DependentUpon>Reports_Cross_Dock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Cross_Dock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Delivery_Performance.Designer.vb">
+      <DependentUpon>Reports_Delivery_Performance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Delivery_Performance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Delivery_Route.Designer.vb">
+      <DependentUpon>Reports_Delivery_Route.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Delivery_Route.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reports_Order_Plan.Designer.vb">
       <DependentUpon>Reports_Order_Plan.vb</DependentUpon>
     </Compile>
     <Compile Include="Reports_Order_Plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Order_Plan_Recalibrate.Designer.vb">
+      <DependentUpon>Reports_Order_Plan_Recalibrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Order_Plan_Recalibrate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Order_Plan_Re_Assign_Per_Seller.Designer.vb">
+      <DependentUpon>Reports_Order_Plan_Re_Assign_Per_Seller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Order_Plan_Re_Assign_Per_Seller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Payments.Designer.vb">
+      <DependentUpon>Reports_Payments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Payments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_Result.Designer.vb">
+      <DependentUpon>Reports_Result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_Agent_Logout.Designer.vb">
+      <DependentUpon>Settings_Agent_Logout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_Agent_Logout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup_Van_Master_Manual.Designer.vb">
+      <DependentUpon>Setup_Van_Master_Manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup_Van_Master_Manual.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Transactions_Order_Preparation.Designer.vb">
@@ -240,10 +306,82 @@
     <Compile Include="Transactions_Order_Preparation.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction_Order_Preparation_Routing.Designer.vb">
-      <DependentUpon>Transaction_Order_Preparation_Routing.vb</DependentUpon>
+    <Compile Include="Transactions_Order_Preparation_XDock.Designer.vb">
+      <DependentUpon>Transactions_Order_Preparation_XDock.vb</DependentUpon>
     </Compile>
-    <Compile Include="Transaction_Order_Preparation_Routing.vb">
+    <Compile Include="Transactions_Order_Preparation_XDock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Agent_Monitoring.Designer.vb">
+      <DependentUpon>Transaction_Agent_Monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Agent_Monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_cashier.Designer.vb">
+      <DependentUpon>Transaction_cashier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_cashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_cashier_Show_Failed.Designer.vb">
+      <DependentUpon>Transaction_cashier_Show_Failed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_cashier_Show_Failed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_CrossDockView.Designer.vb">
+      <DependentUpon>Transaction_CrossDockView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_CrossDockView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Delivery_Plan.Designer.vb">
+      <DependentUpon>Transaction_Delivery_Plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Delivery_Plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Execution.Designer.vb">
+      <DependentUpon>Transaction_Execution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Execution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch.Designer.vb">
+      <DependentUpon>Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch_Set_Agent.Designer.vb">
+      <DependentUpon>Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch_Set_Agent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch_Set_Agent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Result.Designer.vb">
+      <DependentUpon>Transaction_Result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Retry.Designer.vb">
+      <DependentUpon>Transaction_Retry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Retry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Review_Plan.Designer.vb">
+      <DependentUpon>Transaction_Review_Plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Review_Plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction_Review_Plan_Invoice_Transfer.Designer.vb">
+      <DependentUpon>Transaction_Review_Plan_Invoice_Transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_Review_Plan_Invoice_Transfer.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -257,14 +395,77 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Cross_Dock.resx">
+      <DependentUpon>Reports_Cross_Dock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Delivery_Performance.resx">
+      <DependentUpon>Reports_Delivery_Performance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Delivery_Route.resx">
+      <DependentUpon>Reports_Delivery_Route.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports_Order_Plan.resx">
       <DependentUpon>Reports_Order_Plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Order_Plan_Recalibrate.resx">
+      <DependentUpon>Reports_Order_Plan_Recalibrate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Order_Plan_Re_Assign_Per_Seller.resx">
+      <DependentUpon>Reports_Order_Plan_Re_Assign_Per_Seller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Payments.resx">
+      <DependentUpon>Reports_Payments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Result.resx">
+      <DependentUpon>Reports_Result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_Agent_Logout.resx">
+      <DependentUpon>Settings_Agent_Logout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup_Van_Master_Manual.resx">
+      <DependentUpon>Setup_Van_Master_Manual.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions_Order_Preparation.resx">
       <DependentUpon>Transactions_Order_Preparation.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction_Order_Preparation_Routing.resx">
-      <DependentUpon>Transaction_Order_Preparation_Routing.vb</DependentUpon>
+    <EmbeddedResource Include="Transactions_Order_Preparation_XDock.resx">
+      <DependentUpon>Transactions_Order_Preparation_XDock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Agent_Monitoring.resx">
+      <DependentUpon>Transaction_Agent_Monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_cashier.resx">
+      <DependentUpon>Transaction_cashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_cashier_Show_Failed.resx">
+      <DependentUpon>Transaction_cashier_Show_Failed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_CrossDockView.resx">
+      <DependentUpon>Transaction_CrossDockView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Delivery_Plan.resx">
+      <DependentUpon>Transaction_Delivery_Plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Execution.resx">
+      <DependentUpon>Transaction_Execution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch.resx">
+      <DependentUpon>Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch_Set_Agent.resx">
+      <DependentUpon>Transaction_Order_Plan_Re_Assign_Per_Seller_Set_Sub_Batch_Set_Agent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Result.resx">
+      <DependentUpon>Transaction_Result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Retry.resx">
+      <DependentUpon>Transaction_Retry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Review_Plan.resx">
+      <DependentUpon>Transaction_Review_Plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction_Review_Plan_Invoice_Transfer.resx">
+      <DependentUpon>Transaction_Review_Plan_Invoice_Transfer.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -292,6 +493,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DELIVERYDASHICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3179.45\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3179.45\build\Microsoft.Web.WebView2.targets')" />

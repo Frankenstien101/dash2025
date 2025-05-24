@@ -23,34 +23,37 @@ Partial Class Transactions_Order_Preparation
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Transactions_Order_Preparation))
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
-        Me.DTGROUTES = New Guna.UI.WinForms.GunaDataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ISASYNCDONE = New System.Windows.Forms.TextBox()
         Me.DISCTANCE = New System.Windows.Forms.TextBox()
         Me.TOTALVALUE = New System.Windows.Forms.TextBox()
-        Me.TOTALVOLUME = New System.Windows.Forms.TextBox()
-        Me.COMPANYID = New System.Windows.Forms.TextBox()
         Me.DTGCHECK = New Guna.UI.WinForms.GunaDataGridView()
+        Me.TOTALVOLUME = New System.Windows.Forms.TextBox()
+        Me.DTGROUTES = New Guna.UI.WinForms.GunaDataGridView()
+        Me.COMPANYID = New System.Windows.Forms.TextBox()
+        Me.GunaAdvenceButton2 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton3 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.SITEID = New System.Windows.Forms.TextBox()
         Me.TIMENOSEPARATOR = New System.Windows.Forms.TextBox()
         Me.ISNOSTORE = New System.Windows.Forms.TextBox()
@@ -80,8 +83,6 @@ Partial Class Transactions_Order_Preparation
         Me.DTGVEHICLES = New Guna.UI.WinForms.GunaDataGridView()
         Me.DTGBATCH = New Guna.UI.WinForms.GunaDataGridView()
         Me.GunaSeparator1 = New Guna.UI.WinForms.GunaSeparator()
-        Me.GunaAdvenceButton2 = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.GunaAdvenceButton3 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaAdvenceButton4 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.lblprocess = New Guna.UI.WinForms.GunaLabel()
         Me.GunaProgressBar1 = New Guna.UI.WinForms.GunaProgressBar()
@@ -93,13 +94,14 @@ Partial Class Transactions_Order_Preparation
         Me.GunaElipsePanel1 = New Guna.UI.WinForms.GunaElipsePanel()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.GunaElipsePanel2 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.GunaLinkLabel1 = New Guna.UI.WinForms.GunaLinkLabel()
         Me.GunaAdvenceButton5 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaLabel5 = New Guna.UI.WinForms.GunaLabel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DTGROUTES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.DTGCHECK, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DTGROUTES, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTGINVOICES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2GradientPanel2.SuspendLayout()
@@ -125,7 +127,6 @@ Partial Class Transactions_Order_Preparation
         Me.Guna2Panel1.Controls.Add(Me.GunaPictureBox1)
         Me.Guna2Panel1.Controls.Add(Me.GunaLabel2)
         Me.Guna2Panel1.Controls.Add(Me.GunaLabel1)
-        Me.Guna2Panel1.Controls.Add(Me.Panel1)
         Me.Guna2Panel1.Location = New System.Drawing.Point(-2, 15)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
@@ -164,12 +165,128 @@ Partial Class Transactions_Order_Preparation
         Me.GunaLabel1.TabIndex = 0
         Me.GunaLabel1.Text = "ORDER PREPARATION"
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.ISASYNCDONE)
+        Me.Panel1.Controls.Add(Me.DISCTANCE)
+        Me.Panel1.Controls.Add(Me.TOTALVALUE)
+        Me.Panel1.Controls.Add(Me.DTGCHECK)
+        Me.Panel1.Controls.Add(Me.TOTALVOLUME)
+        Me.Panel1.Controls.Add(Me.DTGROUTES)
+        Me.Panel1.Controls.Add(Me.COMPANYID)
+        Me.Panel1.Controls.Add(Me.GunaAdvenceButton2)
+        Me.Panel1.Controls.Add(Me.GunaAdvenceButton3)
+        Me.Panel1.Controls.Add(Me.SITEID)
+        Me.Panel1.Controls.Add(Me.TIMENOSEPARATOR)
+        Me.Panel1.Controls.Add(Me.ISNOSTORE)
+        Me.Panel1.Controls.Add(Me.DTTIMENOSEAPARATOR)
+        Me.Panel1.Controls.Add(Me.CHECKID)
+        Me.Panel1.Controls.Add(Me.STORELIMIT)
+        Me.Panel1.Controls.Add(Me.BATCHNUMBER)
+        Me.Panel1.Controls.Add(Me.LATFROM)
+        Me.Panel1.Controls.Add(Me.VEHICLEID)
+        Me.Panel1.Controls.Add(Me.LONGFROM)
+        Me.Panel1.Location = New System.Drawing.Point(293, 94)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(10, 10)
+        Me.Panel1.TabIndex = 19
+        '
+        'ISASYNCDONE
+        '
+        Me.ISASYNCDONE.Location = New System.Drawing.Point(93, 47)
+        Me.ISASYNCDONE.Name = "ISASYNCDONE"
+        Me.ISASYNCDONE.Size = New System.Drawing.Size(100, 20)
+        Me.ISASYNCDONE.TabIndex = 34
+        '
+        'DISCTANCE
+        '
+        Me.DISCTANCE.Location = New System.Drawing.Point(73, 72)
+        Me.DISCTANCE.Name = "DISCTANCE"
+        Me.DISCTANCE.Size = New System.Drawing.Size(100, 20)
+        Me.DISCTANCE.TabIndex = 33
+        '
+        'TOTALVALUE
+        '
+        Me.TOTALVALUE.Location = New System.Drawing.Point(70, 95)
+        Me.TOTALVALUE.Name = "TOTALVALUE"
+        Me.TOTALVALUE.Size = New System.Drawing.Size(100, 20)
+        Me.TOTALVALUE.TabIndex = 32
+        '
+        'DTGCHECK
+        '
+        Me.DTGCHECK.AllowUserToAddRows = False
+        Me.DTGCHECK.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGCHECK.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DTGCHECK.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DTGCHECK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DTGCHECK.BackgroundColor = System.Drawing.Color.White
+        Me.DTGCHECK.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.DTGCHECK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DTGCHECK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGCHECK.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DTGCHECK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGCHECK.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DTGCHECK.EnableHeadersVisualStyles = False
+        Me.DTGCHECK.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
+        Me.DTGCHECK.Location = New System.Drawing.Point(199, -199)
+        Me.DTGCHECK.Name = "DTGCHECK"
+        Me.DTGCHECK.ReadOnly = True
+        Me.DTGCHECK.RowHeadersVisible = False
+        Me.DTGCHECK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DTGCHECK.Size = New System.Drawing.Size(0, 56)
+        Me.DTGCHECK.TabIndex = 20
+        Me.DTGCHECK.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.DeepOrange
+        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DTGCHECK.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DTGCHECK.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DTGCHECK.ThemeStyle.HeaderStyle.Height = 23
+        Me.DTGCHECK.ThemeStyle.ReadOnly = True
+        Me.DTGCHECK.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.DTGCHECK.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DTGCHECK.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.DTGCHECK.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black
+        Me.DTGCHECK.ThemeStyle.RowsStyle.Height = 22
+        Me.DTGCHECK.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.DTGCHECK.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
+        '
+        'TOTALVOLUME
+        '
+        Me.TOTALVOLUME.Location = New System.Drawing.Point(43, 108)
+        Me.TOTALVOLUME.Name = "TOTALVOLUME"
+        Me.TOTALVOLUME.Size = New System.Drawing.Size(100, 20)
+        Me.TOTALVOLUME.TabIndex = 31
+        '
         'DTGROUTES
         '
         Me.DTGROUTES.AllowUserToAddRows = False
         Me.DTGROUTES.AllowUserToDeleteRows = False
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGROUTES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGROUTES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DTGROUTES.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -178,26 +295,26 @@ Partial Class Transactions_Order_Preparation
         Me.DTGROUTES.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DTGROUTES.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGROUTES.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGROUTES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGROUTES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DTGROUTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGROUTES.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGROUTES.DefaultCellStyle = DataGridViewCellStyle6
         Me.DTGROUTES.EnableHeadersVisualStyles = False
         Me.DTGROUTES.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
-        Me.DTGROUTES.Location = New System.Drawing.Point(28, 3)
+        Me.DTGROUTES.Location = New System.Drawing.Point(155, 113)
         Me.DTGROUTES.Name = "DTGROUTES"
         Me.DTGROUTES.ReadOnly = True
         Me.DTGROUTES.RowHeadersVisible = False
@@ -227,185 +344,149 @@ Partial Class Transactions_Order_Preparation
         Me.DTGROUTES.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
         Me.DTGROUTES.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.DISCTANCE)
-        Me.Panel1.Controls.Add(Me.TOTALVALUE)
-        Me.Panel1.Controls.Add(Me.TOTALVOLUME)
-        Me.Panel1.Controls.Add(Me.DTGROUTES)
-        Me.Panel1.Controls.Add(Me.COMPANYID)
-        Me.Panel1.Controls.Add(Me.DTGCHECK)
-        Me.Panel1.Controls.Add(Me.SITEID)
-        Me.Panel1.Controls.Add(Me.TIMENOSEPARATOR)
-        Me.Panel1.Controls.Add(Me.ISNOSTORE)
-        Me.Panel1.Controls.Add(Me.DTTIMENOSEAPARATOR)
-        Me.Panel1.Controls.Add(Me.CHECKID)
-        Me.Panel1.Controls.Add(Me.STORELIMIT)
-        Me.Panel1.Controls.Add(Me.BATCHNUMBER)
-        Me.Panel1.Controls.Add(Me.LATFROM)
-        Me.Panel1.Controls.Add(Me.VEHICLEID)
-        Me.Panel1.Controls.Add(Me.LONGFROM)
-        Me.Panel1.Location = New System.Drawing.Point(461, 30)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(10, 10)
-        Me.Panel1.TabIndex = 19
-        '
-        'DISCTANCE
-        '
-        Me.DISCTANCE.Location = New System.Drawing.Point(11, 43)
-        Me.DISCTANCE.Name = "DISCTANCE"
-        Me.DISCTANCE.Size = New System.Drawing.Size(100, 20)
-        Me.DISCTANCE.TabIndex = 33
-        '
-        'TOTALVALUE
-        '
-        Me.TOTALVALUE.Location = New System.Drawing.Point(3, 35)
-        Me.TOTALVALUE.Name = "TOTALVALUE"
-        Me.TOTALVALUE.Size = New System.Drawing.Size(100, 20)
-        Me.TOTALVALUE.TabIndex = 32
-        '
-        'TOTALVOLUME
-        '
-        Me.TOTALVOLUME.Location = New System.Drawing.Point(-5, 27)
-        Me.TOTALVOLUME.Name = "TOTALVOLUME"
-        Me.TOTALVOLUME.Size = New System.Drawing.Size(100, 20)
-        Me.TOTALVOLUME.TabIndex = 31
-        '
         'COMPANYID
         '
-        Me.COMPANYID.Location = New System.Drawing.Point(-84, 29)
+        Me.COMPANYID.Location = New System.Drawing.Point(43, 98)
         Me.COMPANYID.Name = "COMPANYID"
         Me.COMPANYID.Size = New System.Drawing.Size(100, 20)
         Me.COMPANYID.TabIndex = 21
         '
-        'DTGCHECK
+        'GunaAdvenceButton2
         '
-        Me.DTGCHECK.AllowUserToAddRows = False
-        Me.DTGCHECK.AllowUserToDeleteRows = False
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGCHECK.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
-        Me.DTGCHECK.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DTGCHECK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DTGCHECK.BackgroundColor = System.Drawing.Color.White
-        Me.DTGCHECK.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DTGCHECK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DTGCHECK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGCHECK.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
-        Me.DTGCHECK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGCHECK.DefaultCellStyle = DataGridViewCellStyle15
-        Me.DTGCHECK.EnableHeadersVisualStyles = False
-        Me.DTGCHECK.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
-        Me.DTGCHECK.Location = New System.Drawing.Point(22, -17)
-        Me.DTGCHECK.Name = "DTGCHECK"
-        Me.DTGCHECK.ReadOnly = True
-        Me.DTGCHECK.RowHeadersVisible = False
-        Me.DTGCHECK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DTGCHECK.Size = New System.Drawing.Size(0, 21)
-        Me.DTGCHECK.TabIndex = 20
-        Me.DTGCHECK.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.DeepOrange
-        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.DTGCHECK.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.DTGCHECK.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.DTGCHECK.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DTGCHECK.ThemeStyle.HeaderStyle.Height = 23
-        Me.DTGCHECK.ThemeStyle.ReadOnly = True
-        Me.DTGCHECK.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.DTGCHECK.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DTGCHECK.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.DTGCHECK.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.DTGCHECK.ThemeStyle.RowsStyle.Height = 22
-        Me.DTGCHECK.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.DTGCHECK.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.GunaAdvenceButton2.Animated = True
+        Me.GunaAdvenceButton2.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton2.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton2.BackColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton2.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray
+        Me.GunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton2.CheckedImage = CType(resources.GetObject("GunaAdvenceButton2.CheckedImage"), System.Drawing.Image)
+        Me.GunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray
+        Me.GunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton2.ForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton2.Image = CType(resources.GetObject("GunaAdvenceButton2.Image"), System.Drawing.Image)
+        Me.GunaAdvenceButton2.ImageSize = New System.Drawing.Size(25, 25)
+        Me.GunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton2.Location = New System.Drawing.Point(177, -47)
+        Me.GunaAdvenceButton2.Name = "GunaAdvenceButton2"
+        Me.GunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton2.OnHoverImage = Nothing
+        Me.GunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.Radius = 9
+        Me.GunaAdvenceButton2.Size = New System.Drawing.Size(50, 40)
+        Me.GunaAdvenceButton2.TabIndex = 12
+        Me.GunaAdvenceButton2.Text = "UPDATE VEHICLE STORE LIMIT"
+        Me.GunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton3
+        '
+        Me.GunaAdvenceButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.GunaAdvenceButton3.Animated = True
+        Me.GunaAdvenceButton3.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton3.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton3.BackColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton3.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.Gray
+        Me.GunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton3.CheckedImage = CType(resources.GetObject("GunaAdvenceButton3.CheckedImage"), System.Drawing.Image)
+        Me.GunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.DimGray
+        Me.GunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton3.ForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton3.Image = CType(resources.GetObject("GunaAdvenceButton3.Image"), System.Drawing.Image)
+        Me.GunaAdvenceButton3.ImageSize = New System.Drawing.Size(35, 35)
+        Me.GunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton3.Location = New System.Drawing.Point(166, -62)
+        Me.GunaAdvenceButton3.Name = "GunaAdvenceButton3"
+        Me.GunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton3.OnHoverImage = Nothing
+        Me.GunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.Radius = 9
+        Me.GunaAdvenceButton3.Size = New System.Drawing.Size(79, 40)
+        Me.GunaAdvenceButton3.TabIndex = 13
+        Me.GunaAdvenceButton3.Text = "EXCLUDE STORES BASED ON SELLER"
+        Me.GunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'SITEID
         '
-        Me.SITEID.Location = New System.Drawing.Point(-19, 11)
+        Me.SITEID.Location = New System.Drawing.Point(90, 10)
         Me.SITEID.Name = "SITEID"
         Me.SITEID.Size = New System.Drawing.Size(100, 20)
         Me.SITEID.TabIndex = 22
         '
         'TIMENOSEPARATOR
         '
-        Me.TIMENOSEPARATOR.Location = New System.Drawing.Point(44, 0)
+        Me.TIMENOSEPARATOR.Location = New System.Drawing.Point(90, 72)
         Me.TIMENOSEPARATOR.Name = "TIMENOSEPARATOR"
         Me.TIMENOSEPARATOR.Size = New System.Drawing.Size(100, 20)
         Me.TIMENOSEPARATOR.TabIndex = 24
         '
         'ISNOSTORE
         '
-        Me.ISNOSTORE.Location = New System.Drawing.Point(22, 3)
+        Me.ISNOSTORE.Location = New System.Drawing.Point(4, 46)
         Me.ISNOSTORE.Name = "ISNOSTORE"
         Me.ISNOSTORE.Size = New System.Drawing.Size(100, 20)
         Me.ISNOSTORE.TabIndex = 23
         '
         'DTTIMENOSEAPARATOR
         '
-        Me.DTTIMENOSEAPARATOR.Location = New System.Drawing.Point(44, 26)
+        Me.DTTIMENOSEAPARATOR.Location = New System.Drawing.Point(3, 137)
         Me.DTTIMENOSEAPARATOR.Name = "DTTIMENOSEAPARATOR"
         Me.DTTIMENOSEAPARATOR.Size = New System.Drawing.Size(100, 20)
         Me.DTTIMENOSEAPARATOR.TabIndex = 25
         '
         'CHECKID
         '
-        Me.CHECKID.Location = New System.Drawing.Point(22, 35)
+        Me.CHECKID.Location = New System.Drawing.Point(3, 145)
         Me.CHECKID.Name = "CHECKID"
         Me.CHECKID.Size = New System.Drawing.Size(100, 20)
         Me.CHECKID.TabIndex = 26
         '
         'STORELIMIT
         '
-        Me.STORELIMIT.Location = New System.Drawing.Point(161, 26)
+        Me.STORELIMIT.Location = New System.Drawing.Point(4, 56)
         Me.STORELIMIT.Name = "STORELIMIT"
         Me.STORELIMIT.Size = New System.Drawing.Size(100, 20)
         Me.STORELIMIT.TabIndex = 30
         '
         'BATCHNUMBER
         '
-        Me.BATCHNUMBER.Location = New System.Drawing.Point(22, 9)
+        Me.BATCHNUMBER.Location = New System.Drawing.Point(70, 69)
         Me.BATCHNUMBER.Name = "BATCHNUMBER"
         Me.BATCHNUMBER.Size = New System.Drawing.Size(100, 20)
         Me.BATCHNUMBER.TabIndex = 23
         '
         'LATFROM
         '
-        Me.LATFROM.Location = New System.Drawing.Point(72, 0)
+        Me.LATFROM.Location = New System.Drawing.Point(93, 21)
         Me.LATFROM.Name = "LATFROM"
         Me.LATFROM.Size = New System.Drawing.Size(100, 20)
         Me.LATFROM.TabIndex = 27
         '
         'VEHICLEID
         '
-        Me.VEHICLEID.Location = New System.Drawing.Point(161, 0)
+        Me.VEHICLEID.Location = New System.Drawing.Point(0, 108)
         Me.VEHICLEID.Name = "VEHICLEID"
         Me.VEHICLEID.Size = New System.Drawing.Size(100, 20)
         Me.VEHICLEID.TabIndex = 29
         '
         'LONGFROM
         '
-        Me.LONGFROM.Location = New System.Drawing.Point(87, 17)
+        Me.LONGFROM.Location = New System.Drawing.Point(4, 82)
         Me.LONGFROM.Name = "LONGFROM"
         Me.LONGFROM.Size = New System.Drawing.Size(100, 20)
         Me.LONGFROM.TabIndex = 28
@@ -450,8 +531,8 @@ Partial Class Transactions_Order_Preparation
         '
         Me.DTGINVOICES.AllowUserToAddRows = False
         Me.DTGINVOICES.AllowUserToDeleteRows = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGINVOICES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGINVOICES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.DTGINVOICES.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -460,23 +541,23 @@ Partial Class Transactions_Order_Preparation
         Me.DTGINVOICES.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DTGINVOICES.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGINVOICES.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGINVOICES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGINVOICES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.DTGINVOICES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGINVOICES.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGINVOICES.DefaultCellStyle = DataGridViewCellStyle15
         Me.DTGINVOICES.EnableHeadersVisualStyles = False
         Me.DTGINVOICES.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.DTGINVOICES.Location = New System.Drawing.Point(11, 186)
@@ -484,7 +565,7 @@ Partial Class Transactions_Order_Preparation
         Me.DTGINVOICES.ReadOnly = True
         Me.DTGINVOICES.RowHeadersVisible = False
         Me.DTGINVOICES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DTGINVOICES.Size = New System.Drawing.Size(578, 267)
+        Me.DTGINVOICES.Size = New System.Drawing.Size(578, 313)
         Me.DTGINVOICES.TabIndex = 4
         Me.DTGINVOICES.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.DeepOrange
         Me.DTGINVOICES.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
@@ -530,7 +611,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaAdvenceButton1.Image = CType(resources.GetObject("GunaAdvenceButton1.Image"), System.Drawing.Image)
         Me.GunaAdvenceButton1.ImageSize = New System.Drawing.Size(20, 20)
         Me.GunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(404, 661)
+        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(243, 660)
         Me.GunaAdvenceButton1.Name = "GunaAdvenceButton1"
         Me.GunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black
@@ -539,7 +620,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.GunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black
         Me.GunaAdvenceButton1.Radius = 9
-        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(186, 47)
+        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(163, 47)
         Me.GunaAdvenceButton1.TabIndex = 5
         Me.GunaAdvenceButton1.Text = "PROCESS ROUTING"
         Me.GunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -696,8 +777,8 @@ Partial Class Transactions_Order_Preparation
         '
         Me.DTGVEHICLES.AllowUserToAddRows = False
         Me.DTGVEHICLES.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGVEHICLES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGVEHICLES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
         Me.DTGVEHICLES.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DTGVEHICLES.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -705,23 +786,23 @@ Partial Class Transactions_Order_Preparation
         Me.DTGVEHICLES.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DTGVEHICLES.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGVEHICLES.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGVEHICLES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGVEHICLES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.DTGVEHICLES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGVEHICLES.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGVEHICLES.DefaultCellStyle = DataGridViewCellStyle12
         Me.DTGVEHICLES.EnableHeadersVisualStyles = False
         Me.DTGVEHICLES.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.DTGVEHICLES.Location = New System.Drawing.Point(12, 539)
@@ -758,36 +839,35 @@ Partial Class Transactions_Order_Preparation
         '
         Me.DTGBATCH.AllowUserToAddRows = False
         Me.DTGBATCH.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.DTGBATCH.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.DTGBATCH.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
         Me.DTGBATCH.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DTGBATCH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DTGBATCH.BackgroundColor = System.Drawing.Color.White
         Me.DTGBATCH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DTGBATCH.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGBATCH.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTGBATCH.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(34, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTGBATCH.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.DTGBATCH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTGBATCH.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTGBATCH.DefaultCellStyle = DataGridViewCellStyle9
         Me.DTGBATCH.EnableHeadersVisualStyles = False
         Me.DTGBATCH.GridColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.DTGBATCH.Location = New System.Drawing.Point(618, 541)
         Me.DTGBATCH.Name = "DTGBATCH"
-        Me.DTGBATCH.ReadOnly = True
         Me.DTGBATCH.RowHeadersVisible = False
         Me.DTGBATCH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DTGBATCH.Size = New System.Drawing.Size(525, 118)
@@ -806,7 +886,7 @@ Partial Class Transactions_Order_Preparation
         Me.DTGBATCH.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.DTGBATCH.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DTGBATCH.ThemeStyle.HeaderStyle.Height = 23
-        Me.DTGBATCH.ThemeStyle.ReadOnly = True
+        Me.DTGBATCH.ThemeStyle.ReadOnly = False
         Me.DTGBATCH.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.DTGBATCH.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DTGBATCH.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
@@ -825,76 +905,6 @@ Partial Class Transactions_Order_Preparation
         Me.GunaSeparator1.Size = New System.Drawing.Size(576, 10)
         Me.GunaSeparator1.TabIndex = 11
         Me.GunaSeparator1.Thickness = 5
-        '
-        'GunaAdvenceButton2
-        '
-        Me.GunaAdvenceButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.GunaAdvenceButton2.Animated = True
-        Me.GunaAdvenceButton2.AnimationHoverSpeed = 0.07!
-        Me.GunaAdvenceButton2.AnimationSpeed = 0.03!
-        Me.GunaAdvenceButton2.BackColor = System.Drawing.Color.Transparent
-        Me.GunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaAdvenceButton2.BorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray
-        Me.GunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton2.CheckedImage = CType(resources.GetObject("GunaAdvenceButton2.CheckedImage"), System.Drawing.Image)
-        Me.GunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray
-        Me.GunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaAdvenceButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaAdvenceButton2.ForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton2.Image = CType(resources.GetObject("GunaAdvenceButton2.Image"), System.Drawing.Image)
-        Me.GunaAdvenceButton2.ImageSize = New System.Drawing.Size(25, 25)
-        Me.GunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton2.Location = New System.Drawing.Point(293, 459)
-        Me.GunaAdvenceButton2.Name = "GunaAdvenceButton2"
-        Me.GunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton2.OnHoverImage = Nothing
-        Me.GunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton2.Radius = 9
-        Me.GunaAdvenceButton2.Size = New System.Drawing.Size(293, 40)
-        Me.GunaAdvenceButton2.TabIndex = 12
-        Me.GunaAdvenceButton2.Text = "UPDATE VEHICLE STORE LIMIT"
-        Me.GunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'GunaAdvenceButton3
-        '
-        Me.GunaAdvenceButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.GunaAdvenceButton3.Animated = True
-        Me.GunaAdvenceButton3.AnimationHoverSpeed = 0.07!
-        Me.GunaAdvenceButton3.AnimationSpeed = 0.03!
-        Me.GunaAdvenceButton3.BackColor = System.Drawing.Color.Transparent
-        Me.GunaAdvenceButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaAdvenceButton3.BorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.Gray
-        Me.GunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton3.CheckedImage = CType(resources.GetObject("GunaAdvenceButton3.CheckedImage"), System.Drawing.Image)
-        Me.GunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.DimGray
-        Me.GunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaAdvenceButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaAdvenceButton3.ForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton3.Image = CType(resources.GetObject("GunaAdvenceButton3.Image"), System.Drawing.Image)
-        Me.GunaAdvenceButton3.ImageSize = New System.Drawing.Size(35, 35)
-        Me.GunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton3.Location = New System.Drawing.Point(7, 459)
-        Me.GunaAdvenceButton3.Name = "GunaAdvenceButton3"
-        Me.GunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton3.OnHoverImage = Nothing
-        Me.GunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton3.Radius = 9
-        Me.GunaAdvenceButton3.Size = New System.Drawing.Size(278, 40)
-        Me.GunaAdvenceButton3.TabIndex = 13
-        Me.GunaAdvenceButton3.Text = "EXCLUDE STORES BASED ON SELLER"
-        Me.GunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GunaAdvenceButton4
         '
@@ -917,7 +927,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaAdvenceButton4.Image = CType(resources.GetObject("GunaAdvenceButton4.Image"), System.Drawing.Image)
         Me.GunaAdvenceButton4.ImageSize = New System.Drawing.Size(20, 20)
         Me.GunaAdvenceButton4.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton4.Location = New System.Drawing.Point(331, 161)
+        Me.GunaAdvenceButton4.Location = New System.Drawing.Point(335, 157)
         Me.GunaAdvenceButton4.Name = "GunaAdvenceButton4"
         Me.GunaAdvenceButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GunaAdvenceButton4.OnHoverBorderColor = System.Drawing.Color.Black
@@ -954,7 +964,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GunaProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GunaProgressBar1.Radius = 4
-        Me.GunaProgressBar1.Size = New System.Drawing.Size(592, 10)
+        Me.GunaProgressBar1.Size = New System.Drawing.Size(576, 10)
         Me.GunaProgressBar1.TabIndex = 15
         '
         'GunaLabel12
@@ -975,7 +985,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaLabel13.BackColor = System.Drawing.Color.Transparent
         Me.GunaLabel13.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.GunaLabel13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GunaLabel13.Location = New System.Drawing.Point(203, 10)
+        Me.GunaLabel13.Location = New System.Drawing.Point(203, 2)
         Me.GunaLabel13.Name = "GunaLabel13"
         Me.GunaLabel13.Size = New System.Drawing.Size(133, 21)
         Me.GunaLabel13.TabIndex = 18
@@ -983,6 +993,7 @@ Partial Class Transactions_Order_Preparation
         '
         'BackgroundWorker1
         '
+        Me.BackgroundWorker1.WorkerSupportsCancellation = True
         '
         'WebView21
         '
@@ -1004,7 +1015,7 @@ Partial Class Transactions_Order_Preparation
         Me.NUMOFCLUSTER.BorderRadius = 5
         Me.NUMOFCLUSTER.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.NUMOFCLUSTER.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.NUMOFCLUSTER.Location = New System.Drawing.Point(297, 667)
+        Me.NUMOFCLUSTER.Location = New System.Drawing.Point(135, 666)
         Me.NUMOFCLUSTER.Name = "NUMOFCLUSTER"
         Me.NUMOFCLUSTER.Size = New System.Drawing.Size(100, 36)
         Me.NUMOFCLUSTER.TabIndex = 23
@@ -1032,14 +1043,26 @@ Partial Class Transactions_Order_Preparation
         Me.GunaElipsePanel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GunaElipsePanel2.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaElipsePanel2.Controls.Add(Me.GunaAdvenceButton5)
+        Me.GunaElipsePanel2.Controls.Add(Me.GunaLinkLabel1)
         Me.GunaElipsePanel2.Controls.Add(Me.GunaAdvenceButton4)
         Me.GunaElipsePanel2.Controls.Add(Me.GunaLabel13)
         Me.GunaElipsePanel2.Location = New System.Drawing.Point(611, 505)
         Me.GunaElipsePanel2.Name = "GunaElipsePanel2"
         Me.GunaElipsePanel2.Radius = 15
-        Me.GunaElipsePanel2.Size = New System.Drawing.Size(539, 211)
+        Me.GunaElipsePanel2.Size = New System.Drawing.Size(539, 203)
         Me.GunaElipsePanel2.TabIndex = 25
+        '
+        'GunaLinkLabel1
+        '
+        Me.GunaLinkLabel1.AutoSize = True
+        Me.GunaLinkLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.GunaLinkLabel1.Location = New System.Drawing.Point(451, 16)
+        Me.GunaLinkLabel1.Name = "GunaLinkLabel1"
+        Me.GunaLinkLabel1.Size = New System.Drawing.Size(84, 15)
+        Me.GunaLinkLabel1.TabIndex = 28
+        Me.GunaLinkLabel1.TabStop = True
+        Me.GunaLinkLabel1.Text = "Process XDock"
         '
         'GunaAdvenceButton5
         '
@@ -1062,7 +1085,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaAdvenceButton5.Image = CType(resources.GetObject("GunaAdvenceButton5.Image"), System.Drawing.Image)
         Me.GunaAdvenceButton5.ImageSize = New System.Drawing.Size(20, 20)
         Me.GunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.GunaAdvenceButton5.Location = New System.Drawing.Point(141, 161)
+        Me.GunaAdvenceButton5.Location = New System.Drawing.Point(412, 660)
         Me.GunaAdvenceButton5.Name = "GunaAdvenceButton5"
         Me.GunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black
@@ -1071,7 +1094,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.GunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black
         Me.GunaAdvenceButton5.Radius = 9
-        Me.GunaAdvenceButton5.Size = New System.Drawing.Size(186, 43)
+        Me.GunaAdvenceButton5.Size = New System.Drawing.Size(179, 47)
         Me.GunaAdvenceButton5.TabIndex = 27
         Me.GunaAdvenceButton5.Text = "CONFIRM ROUTES"
         Me.GunaAdvenceButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1081,7 +1104,7 @@ Partial Class Transactions_Order_Preparation
         Me.GunaLabel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GunaLabel5.AutoSize = True
         Me.GunaLabel5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaLabel5.Location = New System.Drawing.Point(173, 679)
+        Me.GunaLabel5.Location = New System.Drawing.Point(11, 678)
         Me.GunaLabel5.Name = "GunaLabel5"
         Me.GunaLabel5.Size = New System.Drawing.Size(122, 15)
         Me.GunaLabel5.TabIndex = 26
@@ -1093,13 +1116,13 @@ Partial Class Transactions_Order_Preparation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1162, 720)
         Me.Controls.Add(Me.GunaLabel5)
+        Me.Controls.Add(Me.GunaAdvenceButton5)
         Me.Controls.Add(Me.GunaElipsePanel1)
         Me.Controls.Add(Me.NUMOFCLUSTER)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GunaLabel12)
         Me.Controls.Add(Me.lblprocess)
         Me.Controls.Add(Me.GunaProgressBar1)
-        Me.Controls.Add(Me.GunaAdvenceButton3)
-        Me.Controls.Add(Me.GunaAdvenceButton2)
         Me.Controls.Add(Me.GunaSeparator1)
         Me.Controls.Add(Me.DTGBATCH)
         Me.Controls.Add(Me.DTGVEHICLES)
@@ -1119,10 +1142,10 @@ Partial Class Transactions_Order_Preparation
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DTGROUTES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DTGCHECK, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DTGROUTES, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DTGINVOICES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
@@ -1200,4 +1223,6 @@ Partial Class Transactions_Order_Preparation
     Friend WithEvents TOTALVOLUME As TextBox
     Friend WithEvents TOTALVALUE As TextBox
     Friend WithEvents DISCTANCE As TextBox
+    Friend WithEvents ISASYNCDONE As TextBox
+    Friend WithEvents GunaLinkLabel1 As Guna.UI.WinForms.GunaLinkLabel
 End Class
