@@ -111,6 +111,8 @@ Partial Class Transaction_Delivery_Plan
         Me.GunaProgressBar1 = New Guna.UI.WinForms.GunaProgressBar()
         Me.lblprocess = New Guna.UI.WinForms.GunaLabel()
         Me.GunaAdvenceButton2 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.SITEID = New Guna.UI.WinForms.GunaTextBox()
+        Me.COMPANYID = New Guna.UI.WinForms.GunaTextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.DTGROUTES, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,6 +155,8 @@ Partial Class Transaction_Delivery_Plan
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.COMPANYID)
+        Me.Panel1.Controls.Add(Me.SITEID)
         Me.Panel1.Controls.Add(Me.LINEID)
         Me.Panel1.Controls.Add(Me.GunaButton1)
         Me.Panel1.Controls.Add(Me.DTGROUTES)
@@ -1496,6 +1500,38 @@ Partial Class Transaction_Delivery_Plan
         Me.GunaAdvenceButton2.Text = "RE-PROCESS ALL BATCH"
         Me.GunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'SITEID
+        '
+        Me.SITEID.BaseColor = System.Drawing.Color.White
+        Me.SITEID.BorderColor = System.Drawing.Color.Silver
+        Me.SITEID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SITEID.FocusedBaseColor = System.Drawing.Color.White
+        Me.SITEID.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SITEID.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.SITEID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.SITEID.Location = New System.Drawing.Point(22, 22)
+        Me.SITEID.Name = "SITEID"
+        Me.SITEID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.SITEID.SelectedText = ""
+        Me.SITEID.Size = New System.Drawing.Size(88, 26)
+        Me.SITEID.TabIndex = 29
+        '
+        'COMPANYID
+        '
+        Me.COMPANYID.BaseColor = System.Drawing.Color.White
+        Me.COMPANYID.BorderColor = System.Drawing.Color.Silver
+        Me.COMPANYID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.COMPANYID.FocusedBaseColor = System.Drawing.Color.White
+        Me.COMPANYID.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.COMPANYID.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.COMPANYID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.COMPANYID.Location = New System.Drawing.Point(58, 8)
+        Me.COMPANYID.Name = "COMPANYID"
+        Me.COMPANYID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.COMPANYID.SelectedText = ""
+        Me.COMPANYID.Size = New System.Drawing.Size(88, 26)
+        Me.COMPANYID.TabIndex = 30
+        '
         'Transaction_Delivery_Plan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1619,4 +1655,6 @@ Partial Class Transaction_Delivery_Plan
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents LINEID As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaAdvenceButton2 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents COMPANYID As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents SITEID As Guna.UI.WinForms.GunaTextBox
 End Class

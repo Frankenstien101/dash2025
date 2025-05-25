@@ -258,6 +258,12 @@
     <Compile Include="Reports_Delivery_Route.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reports_Freight.Designer.vb">
+      <DependentUpon>Reports_Freight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_Freight.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reports_Order_Plan.Designer.vb">
       <DependentUpon>Reports_Order_Plan.vb</DependentUpon>
     </Compile>
@@ -403,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports_Delivery_Route.resx">
       <DependentUpon>Reports_Delivery_Route.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_Freight.resx">
+      <DependentUpon>Reports_Freight.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports_Order_Plan.resx">
       <DependentUpon>Reports_Order_Plan.vb</DependentUpon>

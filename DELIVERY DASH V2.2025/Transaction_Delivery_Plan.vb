@@ -14,6 +14,10 @@ Imports System.Text.Json
 Public Class Transaction_Delivery_Plan
     Private Sub Transaction_Delivery_Plan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        COMPANYID.Text = Form1.GETCOMPANYID()
+
+        SITEID.Text = Form1.GETSITEID()
+
         Control.CheckForIllegalCrossThreadCalls = False
         DTORDER.Value = Form1.DTCALENDAR.Value
 
@@ -80,7 +84,7 @@ Public Class Transaction_Delivery_Plan
                                ,[STATUS]
                            FROM [dbo].[Dash_SO_Plan_Batch_Details]
 
-                   WHERE COMPANY_ID = '" & Form1.COMPANYID.Text & "' AND SITE_ID = '" & Form1.SITEID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "'", "BSPIDB", DTGSO)
+                   WHERE COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "'", "BSPIDB", DTGSO)
 
             DTGSO.Columns(0).Visible = False
             DTGSO.Columns(1).Visible = False
@@ -98,6 +102,9 @@ Public Class Transaction_Delivery_Plan
         DTDELIVERY.Value = Form1.DTCALENDAR.Value
 
         DTDELIVERY.Value = newDate1
+
+
+
 
     End Sub
 
@@ -152,7 +159,7 @@ Public Class Transaction_Delivery_Plan
 
                 Try
 
-                    views2("SELECT BATCH_ID FROM Dash_Plan_Batch_Transaction WHERE COMPANY_ID = '" & Form1.COMPANYID.Text & "' AND SITE_ID = '" & Form1.SITEID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "'", "BSPIDB", DTGCHECK)
+                    views2("SELECT BATCH_ID FROM Dash_Plan_Batch_Transaction WHERE COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "'", "BSPIDB", DTGCHECK)
                     BATCHNUMBER.Text = DTGCHECK.CurrentRow.Cells(0).Value
 
                 Catch ex As Exception
@@ -163,7 +170,7 @@ Public Class Transaction_Delivery_Plan
 
                 Try
 
-                    views2("SELECT IS_PLAN FROM Dash_SO_Plan_Batch_Details WHERE IS_PLAN = '1' AND  COMPANY_ID = '" & Form1.COMPANYID.Text & "' AND SITE_ID = '" & Form1.SITEID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' GROUP BY IS_PLAN", "BSPIDB", DTGCHECK)
+                    views2("SELECT IS_PLAN FROM Dash_SO_Plan_Batch_Details WHERE IS_PLAN = '1' AND  COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' GROUP BY IS_PLAN", "BSPIDB", DTGCHECK)
                     CHECKID.Text = DTGCHECK.CurrentRow.Cells(0).Value
 
                 Catch ex As Exception
@@ -199,7 +206,7 @@ Public Class Transaction_Delivery_Plan
                                       ,[STATUS]
                                   FROM [dbo].[Dash_SO_Plan_Batch_Details]
 
-                          WHERE COMPANY_ID = '" & Form1.COMPANYID.Text & "' AND SITE_ID = '" & Form1.SITEID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' AND IS_PLAN != '1'", "BSPIDB", DTGSO)
+                          WHERE COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' AND (IS_PLAN = '0' OR IS_PLAN IS NULL)", "BSPIDB", DTGSO)
 
                             DTGSO.Columns(0).Visible = False
                             DTGSO.Columns(1).Visible = False
@@ -243,7 +250,7 @@ Public Class Transaction_Delivery_Plan
                                       ,[STATUS]
                                   FROM [dbo].[Dash_SO_Plan_Batch_Details]
 
-                          WHERE COMPANY_ID = '" & Form1.COMPANYID.Text & "' AND SITE_ID = '" & Form1.SITEID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' AND IS_PLAN != '1'", "BSPIDB", DTGSO)
+                          WHERE COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND ORDER_DATE = '" & DTORDER.Value & "' AND (IS_PLAN = '0' OR IS_PLAN IS NULL)", "BSPIDB", DTGSO)
 
                         DTGSO.Columns(0).Visible = False
                         DTGSO.Columns(1).Visible = False
@@ -510,36 +517,54 @@ Public Class Transaction_Delivery_Plan
 
                 Try
 
-                    Dim TOTVAL As Decimal
-                    Dim TOTDEC As Decimal
-
-                    TOTVAL = DTGBATCH.Rows(i).Cells(4).Value
-                    TOTDEC = 0
-
-                    Dim kf1 As String = "INSERT INTO Dash_Plan_Batch_Transaction(COMPANY_ID,SITE_ID,BATCH_ID,DROP_COUNT,NUM_OF_INVOICES,TOTAL_VALUE,TOTAL_VOLUME,WEIGHT,STATUS,VEHICLE_ID,AGENT,DATE_TO_DELIVER,ORDER_DATE)" _
-                   & "VALUES('" & COMPANY_ID.Text & "'," _
-                  & "'" & SITE_ID.Text & "'," _
-                    & "'" & "DLV" & BATCHNUMBER.Text & "'," _
-                        & "'" & TOTALDROPS & "'," _
-                          & "'" & DTGBATCH.Rows(i).Cells(3).Value & "'," _
-                        & " '" & TOTVAL & "', " _
-                        & "'" & DTGBATCH.Rows(i).Cells(5).Value & "'," _
-                            & "'" & TOTDEC & "'," _
-                                 & "'READY'," _
-                                     & "'" & VEHICLEID.Text & "'," _
-                                       & "''," _
-                                            & "'" & DTDELIVERY.Value & "'," _
-                               & "'" & DTORDER.Value & "')"
-
-                    Data(kf1)
-
-                    '  MsgBox("SAVE TRANSACTION")
+                    views3("SELECT BATCH_ID from Dash_Plan_Batch_Transaction
+                              
+                         WHERE COMPANY_ID = '" & COMPANY_ID.Text & "' AND SITE_ID = '" & SITE_ID.Text & "' AND BATCH_ID = 'DLV" & BATCHNUMBER.Text & "'", "BSPIDB", DTGCHECK)
 
                 Catch ex As Exception
 
-                    '  MsgBox("4" & ex.ToString)
+                    '  MsgBox(ex.ToString)
 
                 End Try
+
+                If DTGCHECK.Rows.Count > 0 Then
+
+                Else
+
+                    Try
+
+                        Dim TOTVAL As Decimal
+                        Dim TOTDEC As Decimal
+
+                        TOTVAL = DTGBATCH.Rows(i).Cells(4).Value
+                        TOTDEC = 0
+
+                        Dim kf1 As String = "INSERT INTO Dash_Plan_Batch_Transaction(COMPANY_ID,SITE_ID,BATCH_ID,DROP_COUNT,NUM_OF_INVOICES,TOTAL_VALUE,TOTAL_VOLUME,WEIGHT,STATUS,VEHICLE_ID,AGENT,DATE_TO_DELIVER,ORDER_DATE)" _
+                       & "VALUES('" & COMPANY_ID.Text & "'," _
+                      & "'" & SITE_ID.Text & "'," _
+                        & "'" & "DLV" & BATCHNUMBER.Text & "'," _
+                            & "'" & TOTALDROPS & "'," _
+                              & "'" & DTGBATCH.Rows(i).Cells(3).Value & "'," _
+                            & " '" & TOTVAL & "', " _
+                            & "'" & DTGBATCH.Rows(i).Cells(5).Value & "'," _
+                                & "'" & TOTDEC & "'," _
+                                     & "'READY'," _
+                                         & "'" & VEHICLEID.Text & "'," _
+                                           & "''," _
+                                                & "'" & DTDELIVERY.Value & "'," _
+                                   & "'" & DTORDER.Value & "')"
+
+                        Data(kf1)
+
+                        '  MsgBox("SAVE TRANSACTION")
+
+                    Catch ex As Exception
+
+                        '  MsgBox("4" & ex.ToString)
+
+                    End Try
+
+                End If
 
             Next
 
